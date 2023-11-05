@@ -443,7 +443,7 @@ html, body {
     }
 }
 
-@media (max-width: 1180px) {
+@media (max-width: 1200px) {
 
     .menu_list {
         gap: 15px;
