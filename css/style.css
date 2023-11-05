@@ -1,0 +1,483 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+html, body {
+    height: 100%;
+}
+
+.wrapper {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    background-color: #1E1E20;
+}
+
+.header_main {
+    background-color: transparent;
+    position: absolute;
+    z-index: 10;
+    left: 0;
+    right: 0;
+}
+
+.container {
+    max-width: 1220px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+.big_container {
+    max-width: 1420px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+.header__inner {
+    padding-top: 20px;
+    padding-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+}
+
+.menu_list {
+    display: flex;
+    gap: 35px;
+}
+
+.menu_list-link {
+    color: white;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+
+
+
+
+
+
+.footer {
+    background-color: #1E1E20;
+    padding: 50px 0 32px;
+}
+
+.footer_container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer_menu {
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
+
+.footer_menu-list {
+    line-height: 1.5;
+}
+
+.footer_menu-list-title {
+    color: white;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.footer_menu-list-link {
+    color: white;
+}
+
+.footer_menu-form {
+    box-sizing: content-box;
+    background-color: #34343d;
+    max-width: 300px;
+    padding: 25px;
+    border-radius: 30px;
+}
+
+.footer_menu-list-input-container {
+    display: flex;
+    align-items: center;
+    gap: 3px;
+    margin-bottom: 15px;
+}
+
+.footer_menu-list-input {
+    background-color: aliceblue;
+    width: 250px;
+    height: 33px;
+    border-top-left-radius: 7px;
+    border-bottom-left-radius: 7px;
+    outline: none;
+    font-size: 16px;
+}
+
+.footer_menu-list-input-submit {
+    display: flex;
+    align-items: center;
+    height: 33px;
+    padding: 5px;
+    background-color: #6e6e85;
+    border-top-right-radius: 7px;
+    border-bottom-right-radius: 7px;
+    cursor: pointer;
+}
+
+.footer_menu-list-description {
+    color: white;
+    font-size: 12px;
+}
+
+.footer_bottom {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer_bottom-text {
+    max-width: 840px;
+    color: rgba(178, 176, 176, 0.78);
+    font-size: 12px;
+    padding-bottom: 30px;
+}
+
+.footer_bottom-copyright {
+    margin-bottom: 10px;
+}
+.footer_bottom-contacts {
+    text-align: right;
+}
+
+.footer_bottom-contacts-data {
+    color: white;
+    font-size: 16px;
+}
+
+.footer_bottom-contacts-time {
+    color: rgba(178, 176, 176, 0.78);
+    font-size: 12px;
+    text-align: right;
+    margin-bottom: 20px;
+}
+
+
+
+
+
+
+.main {
+    flex-grow: 1;
+}
+
+.top {
+    color: white;
+    text-align: center;
+    padding-top: 250px;
+    padding-bottom: 50px;
+    position: absolute;
+    z-index: 5;
+    left: 0;
+    right: 0;
+}
+
+.title {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 58px;
+    padding-bottom: 40px;
+}
+
+.title span {
+    font-size: 65px;
+    font-weight: 800;
+}
+
+.top__link {
+    background-color: #151515;
+    padding: 23px;
+    max-width: 430px;
+    width: 100%;
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: 36px;
+    font-weight: 700;
+}
+
+.swiper::after {
+    content: "";
+    background-color: rgba(21, 21, 21, .3);
+    position: absolute;
+    z-index: 5;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+}
+
+.swiper-slide {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+.swiper-pagination-bullet {
+    width: 120px;
+    height: 3px;
+    background-color: #151515;
+    border-radius: 10px;
+    opacity: 1;
+    margin: 0 15px !important;
+}
+
+.swiper-pagination-bullet-active {
+    height: 6px;
+    background-color: #FFF;
+}
+
+.why_us {
+    text-align: center;
+    margin: 80px 0 30px 0;
+}
+
+.why_us__title {
+    font-size: 38px;
+    margin-bottom: 40px;
+    margin-top: 50px;
+}
+
+.why_us__cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row-gap: 20px;
+    grid-column-gap: 20px;
+    justify-content: center;
+}
+
+.why_us__card_item {
+    max-width: 420px;
+    width: 100%;
+    padding: 44px 53px 33px 51px;
+    background-color: #D9D9D9;
+    border-radius: 20px;
+}
+
+.why_us__card_title {
+    margin: 30px 0 20px 0;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.why_us__card_description {
+    color: #283646;
+    text-align: center;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.why_us__card_link {
+    color: #10255A;
+    text-align: center;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    text-transform: uppercase;
+
+    display: inline-block;
+
+    border-radius: 10px;
+    background: #FFF;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    padding: 12px;
+
+    margin-top: 12px;
+    transition: box-shadow .3s ease;
+}
+
+.why_us__card_link:hover {
+    box-shadow: 8px 10px 5px 2px rgba(0, 0, 255, .2);
+}
+
+
+
+.our_cars {
+    text-align: center;
+    margin: 80px 0 30px 0;
+    background-color: #cfcfe5;
+    padding: 40px 0;
+}
+
+.our_cars__title {
+    font-size: 38px;
+    margin-bottom: 40px;
+}
+
+.our_cars__cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row-gap: 20px;
+    grid-column-gap: 20px;
+    justify-content: center;
+}
+
+.our_cars__card_item {
+    max-width: 420px;
+    width: 100%;
+}
+
+.our_cars__card_car_title {
+    margin-top: 7px;
+    color: #1E1E1E;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    text-transform: capitalize;
+}
+
+.our_cars__card_img {
+    border-radius: 20px;
+}
+
+.our_cars__card_car_price {
+    color: #6e6e85;
+}
+
+.our_cars__card_link, .our_cars__link, .quality_services__card_link {
+    color: #10255A;
+    text-align: center;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    text-transform: uppercase;
+
+    display: inline-block;
+
+    border-radius: 10px;
+    background: #FFF;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+    padding: 12px;
+
+    margin-top: 12px;
+    transition: box-shadow .3s ease;
+}
+
+.our_cars__card_link:hover {
+    box-shadow: 8px 10px 5px 2px rgba(0, 0, 255, .2);
+}
+
+.our_cars__link {
+    margin-top: 40px;
+    background-color: #151515;
+    color: #FFFFFF;
+}
+
+.our_cars__link:hover {
+    box-shadow: 8px 10px 5px 2px rgba(0, 0, 255, .2);
+}
+
+
+.quality_services {
+    text-align: center;
+    margin: 80px 0 80px 0;
+}
+
+.quality_services__title {
+    font-size: 38px;
+    margin-bottom: 40px;
+    margin-top: 50px;
+}
+
+.quality_services__cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 20px;
+    justify-content: center;
+}
+
+.quality_services__card_item {
+    max-width: 372px;
+}
+
+.quality_services__card_text {
+    margin: 0px 10px;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.quality_services__card_link:hover {
+    box-shadow: 8px 10px 5px 2px rgba(0, 0, 255, .2);
+}
+
+@media (max-width: 1440px) {
+    .big_container {
+        max-width: 820px;
+    }
+    .quality_services__cards {
+        grid-template-columns: repeat(2, 1fr);
+        grid-row-gap: 50px;
+        grid-column-gap: 56px;
+    }
+}
+
+@media (max-width: 900px) {
+
+    .menu_list {
+        gap: 15px;
+    }
+
+    .container {
+        max-width: 720px;
+    }
+
+    .big_container {
+        max-width: 774px;
+    }
+
+
+    .our_cars__cards, .why_us__cards {
+        grid-template-columns: repeat(1, 1fr);
+        place-items: center;
+    }
+
+    .quality_services__cards {
+        grid-template-columns: repeat(2, 1fr);
+        grid-row-gap: 20px;
+        grid-column-gap: 10px;
+        place-items: center;
+    }
+
+    .quality_services__card_item {
+        height: 381px;
+    }
+
+    .footer_bottom-text {
+        max-width: 480px;
+    }
+
+}
+
+
