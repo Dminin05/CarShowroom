@@ -1,14 +1,11 @@
-const swiper = new Swiper('.swiper', {
+let submitEmail = document.querySelector(".footer_menu-list-input-submit")
+let inputEmail = document.querySelector(".footer_menu-list-input")
 
-    effect: "fade",
+submitEmail.addEventListener('click', (e) => {
+    e.preventDefault()
+    let email = inputEmail.value
+    inputEmail.value = ""
 
-    pagination: {
-        el: '.swiper-pagination',
-    },
+    alert("Вы подписались на рассылку: " + email)
 
-    autoplay: {
-        delay: 3000,
-        disableOmInteraction: true
-    }
-
-});
+})
