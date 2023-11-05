@@ -24,6 +24,11 @@ html, body {
     height: 100%;
 }
 
+.open {
+    display: flex !important;
+    opacity: 0.9;
+}
+
 .wrapper {
     min-height: 100%;
     display: flex;
@@ -72,6 +77,25 @@ html, body {
     text-transform: uppercase;
     font-weight: 700;
 }
+
+.burger {
+    display: none;
+    position: relative;
+    z-index: 50;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+/*.burger::before, .burger::after {*/
+/*    content: '';*/
+/*    position: absolute;*/
+/*    height: 2px;*/
+/*    width: 100%;*/
+/*    background-color: #FFFFFF;*/
+/*    transition: all 0.3s ease 0s;*/
+/*}*/
+
+
 
 
 
@@ -517,8 +541,25 @@ html, body {
         max-width: 480px;
     }
 
-    .menu_list-link {
+    /*.menu_list-link {*/
+    /*    display: none;*/
+    /*}*/
+
+    .menu_list {
         display: none;
+        flex-direction: column;
+        position: fixed;
+        height: 100%;
+        width: 100%;
+        top: 0; bottom: 0; left: 0; right: 0;
+        z-index: 50;
+        overflow-y: auto;
+        padding: 50px 40px;
+        background-color: #151515;
+    }
+
+    .burger {
+        display: flex;
     }
 
     .footer_container {
