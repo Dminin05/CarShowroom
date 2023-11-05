@@ -475,4 +475,56 @@ html, body {
 
 }
 
+@media (max-width: 425px) {
+    .menu_list {
+        gap: 15px;
+    }
+
+    .big_container {
+        max-width: 820px;
+    }
+
+    .our_cars__cards, .why_us__cards {
+        grid-template-columns: repeat(1, 1fr);
+        place-items: center;
+    }
+
+    .why_us__card_item {
+        width: 350px;
+    }
+
+    .quality_services__cards {
+        grid-template-columns: repeat(1, 1fr);
+        grid-row-gap: 20px;
+        grid-column-gap: 10px;
+        place-items: center;
+    }
+
+    .quality_services__card_item {
+        height: 381px;
+    }
+
+    .footer_bottom-text {
+        max-width: 480px;
+    }
+
+    .menu_list-link {
+        display: none;
+    }
+
+    .footer_container {
+        flex-direction: column;
+    }
+
+    .footer_bottom {
+        flex-direction: column;
+    }
+
+    .footer_bottom-text {
+        order: 2;
+        font-size: 9px;
+    }
+
+}
+
 
