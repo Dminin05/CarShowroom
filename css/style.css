@@ -538,10 +538,6 @@ html, body {
         max-width: 480px;
     }
 
-    /*.menu_list-link {*/
-    /*    display: none;*/
-    /*}*/
-
     .menu_list {
         display: none;
         flex-direction: column;
