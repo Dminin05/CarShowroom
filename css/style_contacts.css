@@ -1,5 +1,6 @@
 input {
     outline: none;
+    border-radius: 0;
 }
 
 .container_contacts {
