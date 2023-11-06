@@ -3,8 +3,19 @@ let inputs = document.querySelectorAll('.contacts_name')
 
 button.addEventListener('click', (e) => {
     e.preventDefault()
+    let count = 0;
     inputs.forEach( elem => {
-        elem.value = ''
+        if (elem.value.length > 0) {
+            count++
+        }
     })
-    alert("Мы скоро с вами свяжемся")
+    if (count === 4) {
+        inputs.forEach( elem => {
+            elem.value = ''
+        })
+        alert("Мы скоро с вами свяжемся")
+    } else {
+        alert("Заполните все поля")
+    }
+
 })
