@@ -361,9 +361,12 @@ html, body {
 .our_cars__card_item {
     max-width: 420px;
     width: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
 .our_cars__card_car_title {
+    text-align: center;
     margin-top: 7px;
     color: #1E1E1E;
     font-size: 20px;
@@ -379,6 +382,7 @@ html, body {
 
 .our_cars__card_car_price {
     color: #6e6e85;
+    text-align: center;
 }
 
 .our_cars__card_link, .our_cars__link, .quality_services__card_link {
@@ -388,6 +392,8 @@ html, body {
     font-style: normal;
     font-weight: 600;
     text-transform: uppercase;
+    max-width: 150px;
+    margin: 0 auto;
 
     display: inline-block;
 
