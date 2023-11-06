@@ -8,7 +8,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/style_contacts.css">
     <script src="../js/main.js" defer></script>
+    <script src="../js/contacts.js" defer></script>
 </head>
 <body>
 
@@ -17,7 +19,7 @@
             <div class="container">
                 <div class="header__inner">
                     <a href="#" class="logo">
-                        <img src="../img/logo.svg" alt="logo" class="logo_img" width="100px" >
+                        <img src="../img/main/logo.svg" alt="logo" class="logo_img" width="100px" >
                     </a>
                     <nav class="menu">
                         <ul class="menu_list">
@@ -46,7 +48,21 @@
         </header>
 
         <div class="main">
-            Test
+            <div class="main_wrapper">
+                <div class="container_contacts">
+                    <img src="../img/contacts/contacts_car_img.png" alt="car" class="main_img">
+                    <div class="contacts_info">
+                        <h1 class="contacts_title">Оставьте свои контактные данные</h1>
+                        <div class="contacts_inputs">
+                            <input type="text" class="contacts_name" placeholder="Имя">
+                            <input type="text" class="contacts_name" placeholder="Фамилия">
+                            <input type="email" pattern="[^@]+@[^@]+\.[a-zA-Z]{2,6}" class="contacts_name" placeholder="Электронная почта">
+                            <input type="tel" pattern="(\+?\d[- .]*){7,13}" maxlength="12" class="contacts_name" placeholder="Номер телефона">
+                        </div>
+                        <a href="#" class="contacts_submit">Отправить</a>
+                    </div>
+                </div>
+            </div>
         </div>
 
         <footer class="footer">
