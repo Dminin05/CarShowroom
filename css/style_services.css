@@ -92,4 +92,10 @@
         grid-template-columns: repeat(1, 1fr);
     }
 
+    .service_item {
+        width: 372px;
+        height: 260px;
+        border-radius: 20px;
+    }
+
 }
