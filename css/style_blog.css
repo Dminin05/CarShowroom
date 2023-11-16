@@ -133,40 +133,36 @@
         width: 390px;
     }
 
-    /*.hidden_content {*/
-    /*    padding-top: 500px;*/
-    /*}*/
-
     .h1 {
-        padding-top: 450px;
+        padding-top: 500px;
     }
 
     .h2 {
-        padding-top: 50px;
+        padding-top: 100px;
     }
 
     .h3 {
-        padding-top: 300px;
+        padding-top: 350px;
     }
 
     .h4 {
-        padding-top: 350px;
+        padding-top: 400px;
     }
 
     .h6 {
-        padding-top: 1100px;
+        padding-top: 1150px;
     }
 
     .h7 {
-        padding-top: 450px;
+        padding-top: 500px;
     }
 
     .h8 {
-        padding-top: 350px;
+        padding-top: 400px;
     }
 
     .h9 {
-        padding-top: 450px;
+        padding-top: 500px;
     }
 
 
