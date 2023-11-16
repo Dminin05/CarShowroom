@@ -1,8 +1,9 @@
-ul {
+.list {
     list-style: inherit;
+    color: white;
 }
 
-li {
+.li {
     margin-left: 20px;
 }
 
@@ -88,13 +89,13 @@ li {
     justify-content: center;
     align-items: flex-start;
     overflow-y: scroll;
+    overflow-x: scroll;
     padding: 60px 15px;
 }
 
 .hidden_content {
-    margin: 0 auto;
+    margin: 40px 0 40px auto;
     max-width: 1000px;
-    text-align: center;
 }
 
 .hidden_active {
@@ -120,6 +121,10 @@ li {
 
     .blog_items {
         grid-template-columns: repeat(1, 1fr);
+    }
+
+    .hidden_image {
+        width: 390px;
     }
 
 }
