@@ -75,18 +75,18 @@ html, body {
     gap: 35px;
 }
 
-.menu_list-link {
-    color: white;
-    text-transform: uppercase;
-    font-weight: 700;
-}
-
 .burger {
     display: none;
     position: relative;
     z-index: 50;
     align-items: center;
     justify-content: flex-end;
+}
+
+.menu_list-link {
+    color: white;
+    text-transform: uppercase;
+    font-weight: 700;
 }
 
 
@@ -499,7 +499,25 @@ html, body {
 
 }
 
-@media (max-width: 425px) {
+@media (max-width: 430px) {
+
+    .menu_list {
+        display: none;
+        flex-direction: column;
+        position: fixed;
+        height: 100%;
+        width: 100%;
+        top: 0; bottom: 0; left: 0; right: 0;
+        z-index: 50;
+        overflow-y: auto;
+        padding: 50px 40px;
+        background-color: #151515;
+    }
+
+    .burger {
+        display: flex;
+    }
+
     .menu_list {
         gap: 15px;
     }
@@ -539,23 +557,6 @@ html, body {
 
     .footer_bottom-text {
         max-width: 480px;
-    }
-
-    .menu_list {
-        display: none;
-        flex-direction: column;
-        position: fixed;
-        height: 100%;
-        width: 100%;
-        top: 0; bottom: 0; left: 0; right: 0;
-        z-index: 50;
-        overflow-y: auto;
-        padding: 50px 40px;
-        background-color: #151515;
-    }
-
-    .burger {
-        display: flex;
     }
 
     .footer_container {

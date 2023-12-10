@@ -13,6 +13,5 @@ submitEmail.addEventListener('click', (e) => {
 let burger = document.querySelector(".burger")
 burger.addEventListener('click', (e) => {
     e.preventDefault()
-    // this.classList.toggle('active')
     document.querySelector('.menu_list').classList.toggle('open')
 })

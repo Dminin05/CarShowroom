@@ -119,7 +119,7 @@
 
 }
 
-@media (max-width: 425px) {
+@media (max-width: 430px) {
 
     .blog_items {
         grid-template-columns: repeat(1, 1fr);
